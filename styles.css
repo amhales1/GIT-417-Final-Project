@@ -1,0 +1,240 @@
+/* Alex Hales | LoFi for Life Stylesheet */
+
+/*Global Styles */
+body {
+    margin: 0;
+    padding: 0;
+    background: image("prism.png");
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#content {
+    width: 1290px;
+    margin: 0 auto;
+    padding: 0;
+    
+}
+
+header {
+    height: 80px;
+    margin: 0;
+    background-color: #34093D;
+}
+
+h1 {
+    font-size: 40px;
+    color: #FFF;
+    padding-left:20px;
+    padding-top:20px;
+    text-align: center;
+}
+
+#Navigation {
+    width:1280px;
+    margin:0 auto;
+    padding:0;
+    text-align: center;
+    font-size: 30px;
+}
+#Navigation h2{
+    visibility: hidden;
+	height: 1px;
+}
+
+nav ul li {
+    list-style-type: none;
+    margin-left: auto;
+    margin-right: auto;
+    display: inline-block;
+}
+
+nav ul a {
+    background-color: #34093D;
+    color: #FFF;
+    width: 100px;
+    padding: 5px;
+    text-decoration: none;
+    text-align:center; 
+    
+}
+
+nav ul a:hover {
+    color:#000;
+    background-color: #fff;
+}
+
+
+#contact li {
+    list-style-type: none;
+}
+
+#contact {
+    background-color: #34093D;
+    color: #FFF;
+    font-size: 20px;
+    margin: 0;
+    padding: 5px;
+    text-align: center;
+}
+
+a {
+    color: #FFB310;
+    font-weight: bold;
+}
+
+main {
+    background-color: #24292E;
+    color: white;
+    width: 1280px;
+    height: 5000px;
+    margin: 0;
+    padding: 0 5px 0 5px;
+    float: left;
+}
+
+main #text{
+    width: 1100px;
+    height: 700px;
+    margin: 0;
+    padding: 0 5px 0 5px;
+}
+
+main h2 {
+    font-size: 32px;
+}
+
+main h3 {
+    font-size: 24px;
+}
+
+/* Product Display | LoFi Product Playlists Styles  */
+
+
+/* Game | Win a Free Song Styles */
+
+
+/* Contact Form | Validating Form Styles */
+form{
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    width: 350px;
+    max-width:400px;
+    margin: 0 auto;
+	padding: 20px;
+	color: #fff;
+    background-color: #34093D;
+	font-size: 14px;
+    
+}
+
+input, label, fieldset, #message{
+	display: block;
+	width: 75%;
+    margin: 0 auto;
+}
+
+label{
+	padding-left: 0.5em;
+	margin: 0.75em 0 0.25em 0;
+}
+#message{
+    margin-bottom: 20px;
+}
+.message{
+  display: none;
+  color: #fff;
+  font-size: 1.2em;
+  margin: 0.25em 0;
+  font-weight: bold;
+}
+
+.error{
+  font-size: 1em;
+  display: block;
+}
+
+.errorInput{
+  border: 1px solid red;
+}
+
+input{
+	font-size: 1em;
+	padding: 0.25em 0.5em;
+	border: 1px solid black;
+	height: 1.5em;
+}
+
+fieldset{
+	border: 1px solid #fff;
+	padding: 0.5em 0 1em 0.5em;
+	margin: 0.75em 0 0.25em 0;
+	width: 75%;
+	display: grid;
+	grid-template-columns: 1fr 3fr 1fr 3fr;
+}
+
+textarea{
+	width: 100%;
+	height: 5em;
+	margin-bottom: 1em;
+}
+
+input[type=submit]{
+	padding: 0.75em;
+	margin-top: 20px;
+    width: 35%;
+	height: auto;
+	color: #fff;
+	background-color: #fff;
+	border: none;
+	font-family: serif;
+}
+
+#mySubmit{
+  width: 30%;
+  margin: 0 auto;
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+#mySubmit:hover{
+  background-color: black;
+  color: white;
+}
+
+#success{
+  border-top: 5px solid black;
+  padding: 1em;
+  line-height: 1.5em;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+#success h2{
+  text-align: center;
+}
+
+#success.hide{
+  display: none;
+}
+
+#success.show{
+  display: block;
+}
+
+
+footer {
+    background-color: #34093D;
+    text-align: center;
+    padding: 10px;
+    font-style: italic;
+    margin-top: 20px;
+    color:white;
+    float:none;
+}
+
+

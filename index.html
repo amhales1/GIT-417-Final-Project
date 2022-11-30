@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>LoFi for Life</title>
+		<meta charset="UTF-8">
+        <meta name="author" content="Alex Hales">
+        <link rel="stylesheet" href="styles.css">
+        <script src="script.js" defer></script>"
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+        
+</head>
+<body background="prism.png">
+    <div id="content">
+        <header>
+            <h1>LoFi for Life</h1>
+        </header>
+    
+        <section id="Navigation">
+            <h2>Main Navigation</h2>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="">Shop</a></li>
+                        <li><a href="">Contact</a></li>
+                        <li id="mode"><a href="">Light/Dark</a></li>
+                    </ul>
+                </nav>
+          
+        </section>
+        <main>
+            <section>
+            <h2>LoFi Playlist</h2>
+            <p>example</p>
+            </section>
+            <section>
+                <h2>Win a Free Song</h2>
+                <p>example</p>
+            </section>
+            <section>
+                <h2>Contact Us</h2>
+                <form id="myForm" action="https://wp.zybooks.com/form-viewer.php" target="_blank" method="GET">
+                    <label for="myFirstName">First Name<span class="required">*</span></label>
+                    <span class="message">Please enter your First Name.</span>
+                    <input type="text" name="myFirstName" id="myFirstName" placeholder="Insert First Name">
+                    
+                    <label for="myLastName">Last Name<span class="required">*</span></label>
+                    <span class="message">Please enter your Last Name.</span>
+                    <input type="text" name="myLastName" id="myLastName" placeholder="Insert Last Name">
+                    
+                    <label for="myEmail">Email<span class="required">*</span></label>
+                    <span class="message">Please enter your email.</span>
+                    <input type="email" name="myEmail" id="myEmail" placeholder="Insert Email">
+                    
+                    <label for="myPhone">Phone<span class="required">*</span></label>
+                    <span class="message">Please enter your phone number.</span>
+                    <input type="tel" name="myPhone" id="myPhone" placeholder="(480)-123-4567">
+                    
+                    <fieldset>
+                        <legend>Preferred Contact Method<span class="required">*</span></legend>
+                        <input type="radio" name="contactPref" id="prefPhone" required checked>
+                        <label for="prefPhone">Phone</label>
+                        <input type="radio" name="contactPref" id="prefEmail">
+                        <label for="prefEmail">Email</label>
+                    </fieldset>
+                    
+                    <label for="message">Message<span class="required">*</span></label>
+                    <span class="message">Please add a message.</span>
+                    <textarea id="message" placeholder="Leave a message here."></textarea>
+                    
+                    <input type="submit" id="mySubmit">
+                </form>
+                <section id="success" class="hide">
+                  <h2>Thank you!</h2>
+                  <p>You have successfully submitted the contact form. Here is the information you sent us:</p>
+                  <p id="formSub"></p>
+                </section>
+            </section>
+        </main>
+    
+        <footer>
+				Copyright &copy;2022 | LoFi for Life<br>
+        </footer> 
+    </div>
+</body>
+</html>
