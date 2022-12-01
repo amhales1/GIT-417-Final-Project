@@ -2,15 +2,76 @@
 "use strict";
 
 //Dark Mode Script
-
 //change body, content div, and text color (light v. dark)//
 
+//----------------------------------------------------------------------------------------------------------------------//
 
 //Product Gallery Switcher Script
 //change status of product gallery between item1 - item5
 
-//Game (Win a Song) Script
-//display game information
+//----------------------------------------------------------------------------------------------------------------------//
+
+//Game (Win a Song) Script 
+function getRandomNumber(min, max) {  //Function for getting a random number
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+function notANumber(e){                                                               //Function for sending error message when its not a valid number per instructions
+ e.preventDefault();                                                                  //Prevent Default Sub
+ console.log("Not a Valid Number");                                                   //Print error message to console for debugging
+ let gameMessage = document.getElementById("gameMsg");                                //Pull up game message span
+ gameMessage.innerHTML = "Your guess is not a number between 1-10, Reset the Game.";  //Display error message to user
+}
+//Reset Game Function
+function gameReset(e){  //Function to reset the game via a reset button
+ e.preventDefault(); //Prevent Default Sub
+ 
+ let Display1 = document.getElementById("number1");    //initiate Display 1 in function
+ let Display2 = document.getElementById("number2");    //initiate Display 2 in function
+ let gameMessage = document.getElementById("gameMsg"); //initiate Game Message in function
+ 
+ //clear game
+ document.getElementById("gameForm").reset(); //reset form
+ gameMessage.innerHTML = " ";                 //reset game message
+ Display1.innerHTML = " ";                    //reset display 1
+ Display2.innerHTML = " ";                    //reset display 2
+}
+//function for the game
+function songGame(e){  //Main Function for the Game
+ 
+e.preventDefault();  //prevent default submission
+
+let Display1 = document.getElementById("number1");    //initiate display 1 span
+let Display2 = document.getElementById("number2");    //initiate display 2 span
+let gameMessage = document.getElementById("gameMsg"); //initiate game message span
+
+let rand1 = getRandomNumber(1,10); //generate a random number between 1-10
+Display1.innerHTML = rand1;        //display random number to the screen
+
+let num1 = parseInt(document.getElementById("num1").value); //ask, validate, and parse Num1 into a readable number
+if(isNaN(num1)){                                            //If statement determines if num1 is a number
+  console.log("NAN");                                       //log error message to console for debugging
+  return notANumber(e);                                     //calling function notANumber to give error message if number is not a number
+}else if((num1 > 10) || (num1 < 1)){                        //Verify number is between 1 - 10
+  console.log("Not a Number Between 1-10");                 //log error message to console for debugging
+  return notANumber(e);                                     //calling function notANumber to give error message if number is not between 1-10
+}else{                                                      //Else statement determines if num1 passes the check
+  Display2.innerHTML = num1;                                //display num1 to the user on screen
+  console.log("Tis' good mate!");                           //log message to console for debugging
+}
+
+//see if they match, then display winning message
+if(rand1 === num1){  //if they match then display winning message
+  gameMessage.innerHTML = "You Won! Thanks for playing.";
+}else{               //if they don't match then display lost message
+  gameMessage.innerHTML = "You Lost. Thanks for playing, reset game.";
+}
+}
+
+//attach an event listener to the button for the game
+document.getElementById("gamePlay").addEventListener("click", songGame);
+document.getElementById("reset").addEventListener("click", gameReset);
+
+//----------------------------------------------------------------------------------------------------------------------//
 
 //Contact Form Validation Script
 function validateForm(e){       
@@ -121,3 +182,5 @@ function validateForm(e){
   
   //attach event handler to call for form validation on submission
   document.getElementById("myForm").addEventListener("submit", validateForm);
+  document.getElementById("mode").addEventListener(onclick, darkened);
+  

@@ -22,7 +22,7 @@
                         <li><a href="index.html">Home</a></li>
                         <li><a href="">Shop</a></li>
                         <li><a href="">Contact</a></li>
-                        <li id="mode"><a href="">Light/Dark</a></li>
+                        <li onclick="darkened" id="mode"><a href="">Light/Dark</a></li>
                     </ul>
                 </nav>
           
@@ -32,10 +32,24 @@
             <h2>LoFi Playlist</h2>
             <p>example</p>
             </section>
-            <section>
-                <h2>Win a Free Song</h2>
-                <p>example</p>
+            <section id="game">
+                <h2>Win A Song Sample</h2>
+                <section>
+                    <p>Click the button to generate a random number. If you guess the matching number, you win a free song sample!</p>
+                    <form id="gameForm">
+                        <label for="num1">Guess a Number:</label>
+                        <input type="number" name="num1" id="num1">
+                    </form>
+                    <div id="formButtonCenter">
+                        <span id="number1"></span>
+                        <span id="number2"></span>
+                        <span id="gameMsg"></span>
+                        <button id="gamePlay">Play!</button>
+                        <button id="reset">Reset</button>
+                    </div>
+                </section>
             </section>
+
             <section id="form_center">
                 <h2>Contact Us</h2>
                 <form id="myForm" action="https://wp.zybooks.com/form-viewer.php" target="_blank" method="GET">
@@ -78,7 +92,7 @@
         </main>
     
         <footer>
-				Copyright &copy;2022 | LoFi for Life<br>
+				<small>Copyright &copy;2022 | LoFi for Life</small>
         </footer> 
     </div>
 </body>

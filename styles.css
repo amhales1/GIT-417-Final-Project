@@ -9,13 +9,14 @@ body {
 }
 
 #content {
-    width: 1290px;
+    width: 1280px;
     margin: 0 auto;
     padding: 0;
     
 }
 
 header {
+    width: 1290px;
     height: 80px;
     margin: 0;
     background-color: #34093D;
@@ -30,7 +31,7 @@ h1 {
 }
 
 #Navigation {
-    width:1280px;
+    width: 1230px;
     margin:0 auto;
     padding:0;
     text-align: center;
@@ -86,7 +87,7 @@ main {
     background-color: #24292E;
     color: white;
     width: 1280px;
-    height: 5000px;
+    height: 2000px;
     margin: 0;
     padding: 0 5px 0 5px;
     float: left;
@@ -111,9 +112,50 @@ main h3 {
 
 
 /* Game | Win a Free Song Styles */
+#gameForm{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+button{
+display: inline-block;
+margin: 0 auto;
+background-color: #34093D;
+border: none;
+outline: none;
+color: #fff;
+padding: 20px;
+}
 
+#formButtonCenter{
+    text-align: center;
+}
+
+#number1 #number2{
+    padding: 10px;
+    margin: 10px auto;
+}
+
+#gameMsg {
+display: block;
+margin: 10px auto;
+padding-top: 5px;
+height: 50px;
+}
+
+ button:hover{
+    background-color: white;
+    color: black;
+}
 
 /* Contact Form | Validating Form Styles */
+#game {
+    text-align: center;
+}
+
 form{
     display: inline-block;
     margin: 0 auto;
@@ -199,15 +241,15 @@ input[type=submit]{
 #mySubmit{
   width: 30%;
   margin: 0 auto;
-  background-color: white;
-  color: black;
+  background-color: black;
+  color: white;
   font-weight: bold;
   font-size: 20px;
 }
 
 #mySubmit:hover{
-  background-color: black;
-  color: white;
+  background-color: white;
+  color: black;
 }
 
 #success{
@@ -230,15 +272,18 @@ input[type=submit]{
   display: block;
 }
 
-
 footer {
+    width: 1190px;
     background-color: #34093D;
     text-align: center;
-    padding: 10px;
+    padding: 50px;
     font-style: italic;
-    margin-top: 20px;
+    margin-top: 30px;
     color:white;
     float:none;
 }
-
+footer small{
+    font-size: 20px;
+    padding-top: 20px;
+}
 
