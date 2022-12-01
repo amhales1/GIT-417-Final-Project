@@ -1,4 +1,4 @@
-/* Alex Hales | LoFi for Life Stylesheet */
+/* Alex Hales | LoFi for Life Style sheet */
 
 /*Global Styles */
 body {
@@ -116,17 +116,20 @@ main h3 {
 /* Contact Form | Validating Form Styles */
 form{
     display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
     text-align: left;
-    width: 350px;
-    max-width:400px;
+    width: 500px;
+    max-width:600px;
     margin: 0 auto;
 	padding: 20px;
 	color: #fff;
     background-color: #34093D;
 	font-size: 14px;
     
+}
+
+#form_center{
+    text-align: center;
 }
 
 input, label, fieldset, #message{
@@ -168,8 +171,9 @@ input{
 
 fieldset{
 	border: 1px solid #fff;
-	padding: 0.5em 0 1em 0.5em;
-	margin: 0.75em 0 0.25em 0;
+	padding: 5px;
+	margin: 0 auto;
+    margin-top: 10px;
 	width: 75%;
 	display: grid;
 	grid-template-columns: 1fr 3fr 1fr 3fr;
@@ -177,7 +181,7 @@ fieldset{
 
 textarea{
 	width: 100%;
-	height: 5em;
+	height: 100px;
 	margin-bottom: 1em;
 }
 
