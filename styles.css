@@ -130,6 +130,11 @@ main h3 {
     color: black;
 }
 
+.item1 img{
+    width: 400px;
+    height: 400px;
+}
+
 /* Game | Win a Free Song Styles */
 #gameForm{
     display: grid;
