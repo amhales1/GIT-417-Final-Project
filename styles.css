@@ -109,7 +109,26 @@ main h3 {
 }
 
 /* Product Display | LoFi Product Playlists Styles  */
+.list {
+    text-align: center;
+}
 
+.list ul{
+    width: 250px;
+    padding: 20px;
+    text-align: center;
+}
+.list li{
+    text-decoration: none;
+    list-style: none;
+    padding: 10px;
+    background-color: #34093D;
+    color: white;
+}
+.list li:hover{
+    background-color: white;
+    color: black;
+}
 
 /* Game | Win a Free Song Styles */
 #gameForm{
